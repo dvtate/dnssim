@@ -29,7 +29,7 @@ function randLookup() {
 const nThreads = process.env.THREADS || 10;
 for (let i = 0; i < nThreads; i++)
     randLookup();
-console.log(`Spawned ${nThreads} random lookup threads`);
+console.log(`\nSpawned ${nThreads} random lookup threads`);
 
 
 function knownLookup() {
@@ -45,4 +45,4 @@ function knownLookup() {
 }
 
 knownLookup();
-console.log('Spawned 1 known lookup thread');
+console.log('\nSpawned 1 known lookup thread');
