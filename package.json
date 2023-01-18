@@ -1,0 +1,15 @@
+{
+  "name": "dnsspam",
+  "version": "1.0.0",
+  "description": "protestware ware to send randomly genereated dns requests so that maybe att will let me change dns servers on my router",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [
+    "protestware",
+    "dns"
+  ],
+  "author": "dvtate",
+  "license": "MIT"
+}
