@@ -4,15 +4,15 @@ const dns = require('dns');
 const genDomain = require('./site_generator');
 const knownSites = require('./known_sites');
 
-// AT&T DNS servers
-dns.setServers([ '68.94.156.1', '68.94.157.1' ]);
+// Change this line to the DNS servers provided by your ISP
+dns.setServers([ '68.94.156.1', '68.94.157.1' ]); // AT&T DNS servers
 
 let requestsSent = 0;
 
 const spacepad = '                                                                               ';
 function randLookup() {
     const domain = genDomain();
-    process.stdout.write(`\r[${requestsSent++}] dig ${domain}${spacepad}`);
+    process.stdout.write(`\r[${requestsSent++}] resolve ${domain}${spacepad}`);
     dns.resolveAny(domain, err => {
         // if (err)
         //     console.error(`\nERROR: lookup ${domain}:`);
