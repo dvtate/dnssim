@@ -13,9 +13,9 @@ const spacepad = '                                                              
 function randLookup() {
     const domain = genDomain();
     process.stdout.write(`\r[${requestsSent++}] dig ${domain}${spacepad}`);
-    dns.dns.resolveAny(domain, err => {
-        if (err)
-            console.error(`\nERROR: lookup ${domain}:`, err);
+    dns.resolveAny(domain, err => {
+        // if (err)
+        //     console.error(`\nERROR: lookup ${domain}:`);
 
         // If server is busy, slow down
         if (os.loadavg()[0] > 0.5)
@@ -37,8 +37,8 @@ function knownLookup() {
     // process.stdout.write(`\r[${requestsSent++}] dig ${domain}${}`);
     requestsSent++;
     dns.resolveAny(domain, err => {
-        if (err)
-            console.error(`\nERROR: known ${domain}:`, err);
+        // if (err)
+        //     console.error(`\nERROR: known ${domain}:`);
 
         setTimeout(knownLookup, 5000);
     });
