@@ -4,7 +4,8 @@
   "description": "protestware ware to send randomly genereated dns requests so that maybe att will let me change dns servers on my router",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "node main.js",
+    "deploy": "until node main.js; do echo \"exited with code $?. Restarting...\" >%2; sleep 1; done"
   },
   "keywords": [
     "protestware",

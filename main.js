@@ -9,13 +9,13 @@ dns.setServers([ '68.94.156.1', '68.94.157.1' ]); // AT&T DNS servers
 
 let requestsSent = 0;
 
-const spacepad = '                                                                               ';
+const spacepad = '                                                            ';
 function randLookup() {
     const domain = genDomain();
     process.stdout.write(`\r[${requestsSent++}] resolve ${domain}${spacepad}`);
     dns.resolveAny(domain, err => {
-        // if (err)
-        //     console.error(`\nERROR: lookup ${domain}:`);
+        if (err && err.code !== 'ENOTFOUND')
+             console.error(`\rERROR: lookup ${domain}:`, err.code, '                                   ');
 
         // If server is busy, slow down
         if (os.loadavg()[0] > 0.5)
@@ -26,7 +26,7 @@ function randLookup() {
 }
 
 // Spawn threads
-const nThreads = process.env.THREADS || 10;
+const nThreads = process.env.THREADS || 16;
 for (let i = 0; i < nThreads; i++)
     randLookup();
 console.log(`\nSpawned ${nThreads} random lookup threads`);
