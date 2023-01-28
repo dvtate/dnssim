@@ -11,11 +11,11 @@ let requestsSent = 0;
 
 const spacepad = '                                                            ';
 function randLookup() {
-    const domain = genDomain();
+    const domain = genDomain({ minLength: 3, maxLength: 20 });
     process.stdout.write(`\r[${requestsSent++}] resolve ${domain}${spacepad}`);
     dns.resolveAny(domain, err => {
         if (err && err.code !== 'ENOTFOUND')
-             console.error(`\rERROR: lookup ${domain}:`, err.code, '                                   ');
+            console.error(`\rERROR: lookup ${domain}:`, err.code, '                                   ');
 
         // If server is busy, slow down
         if (os.loadavg()[0] > 0.5)
@@ -37,8 +37,8 @@ function knownLookup() {
     // process.stdout.write(`\r[${requestsSent++}] dig ${domain}${}`);
     requestsSent++;
     dns.resolveAny(domain, err => {
-        // if (err)
-        //     console.error(`\nERROR: known ${domain}:`);
+        if (err)
+            console.error(`\rERROR: known ${domain}:`, err);
 
         setTimeout(knownLookup, 5000);
     });

@@ -8,6 +8,7 @@ module.exports = [
     'dvtate.github.io',
     'corki.js.org',
     'ridder.xyz',
+    'xss.software',
 
     // Promos
     'birdmonitors.net',
@@ -18,6 +19,7 @@ module.exports = [
     'www.spamhaus.org',
     'githubcopilotinvestigation.com',
     'tilde.club',
+    'infoseccorp.com',
 
     // Public good
     'wikipedia.org',
@@ -34,7 +36,6 @@ module.exports = [
     'leagueoflegends.com',
     'riotgames.com',
     'lol.gg',
-    'gg.lol',
     'op.gg',
     'lolalytics.com',
 
@@ -71,13 +72,17 @@ module.exports = [
     'cnn.com',
     'wsj.com',
     'reuters.com',
-    'ap.com',
+    'apnews.com',
     'bloomberg.com',
     'yahoo.com',
     'gizmodo.com',
     'sciencedirect.com',
     'forbes.com',
     'nature.com',
+    'wired.co.uk',
+    'cnet.com',
+    'nola.com',
+    'nypost.com',
 
     // Entertainment
     'netflix.com',
@@ -104,6 +109,5 @@ module.exports = [
     '123-reg.co.uk',
     'wasm.builders',
     'feedburner.com',
-
 
 ];

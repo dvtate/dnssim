@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
-    "deploy": "until node main.js; do echo \"exited with code $?. Restarting...\" >%2; sleep 1; done"
+    "deploy": "until npm start; do echo \"exited with code $?. Restarting...\" > /dev/stderr; sleep 1; done"
   },
   "keywords": [
     "protestware",
