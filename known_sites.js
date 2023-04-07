@@ -1,14 +1,15 @@
 
 module.exports = [
     // Shameless self-promotion
-    'dvtate.com',
+    'dvtt.net',
     'xtie.net',
-    'xssaas.com',
     'bodge.dev',
     'dvtate.github.io',
     'corki.js.org',
     'ridder.xyz',
     'xss.software',
+    'gitadopt.org',
+    'gitadopt.com',
 
     // Promos
     'birdmonitors.net',
@@ -23,6 +24,7 @@ module.exports = [
 
     // Public good
     'wikipedia.org',
+    'w3.org',
 
     // Popular search engines
     'google.com',
@@ -30,7 +32,6 @@ module.exports = [
     'duckduckgo.com',
     'searx.work',
     'goo.gl',
-
 
     // Gaming
     'leagueoflegends.com',
@@ -67,6 +68,11 @@ module.exports = [
     'pinterest.com',
     'blogspot.com',
     'yelp.com',
+
+    // Instant messengers
+    't.me',
+    'discord.com',
+    'gmail.com',
 
     // news
     'cnn.com',
@@ -108,5 +114,5 @@ module.exports = [
     'x.com',
     'wasm.builders',
     'feedburner.com',
-
+    '3m.com',
 ];
