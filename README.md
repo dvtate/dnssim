@@ -2,7 +2,8 @@
 Because they want to sell my DNS history, AT&T doesn't allow me to change the DNS server in the router I have to pay them to use. So I threw together this script which sends random requests -- making DNS data worthless.
 
 ## Setup
-The app has no dependencies! Just use `npm run deploy`, `npm start` or `node main.js` and it should start making requests.
+- Install via `npm install --global dnssim`
+- Run via `npx dnssim deploy` or `npx dnssim` (you can omit npx if installed globally)
 
 ### Environment Variables
 #### `DNS_SERVERS`
