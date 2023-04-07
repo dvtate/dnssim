@@ -1,5 +1,5 @@
 {
-  "name": "dnsspam",
+  "name": "dnssim",
   "version": "1.0.0",
   "description": "protestware ware to send randomly genereated dns requests so that maybe att will let me change dns servers on my router",
   "main": "main.js",
@@ -8,7 +8,6 @@
     "deploy": "until npm start; do echo \"exited with code $?. Restarting...\" > /dev/stderr; sleep 1; done"
   },
   "keywords": [
-    "protestware",
     "dns"
   ],
   "author": "dvtate",

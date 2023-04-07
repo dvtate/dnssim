@@ -4,8 +4,11 @@ const dns = require('dns');
 const genDomain = require('./site_generator');
 const knownSites = require('./known_sites');
 
-// Change this line to the DNS servers provided by your ISP
-dns.setServers([ '68.94.156.1', '68.94.157.1' ]); // AT&T DNS servers
+dns.setServers(
+    process.env.DNS_SERVERS
+    ? process.env.DNS_SERVERS.split(',')
+    : [ '68.94.156.1', '68.94.157.1' ] // AT&T DNS servers
+);
 
 let requestsSent = 0;
 

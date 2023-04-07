@@ -106,7 +106,6 @@ module.exports = [
     'zoom.earth',
     'robinhood.com',
     'x.com',
-    '123-reg.co.uk',
     'wasm.builders',
     'feedburner.com',
 
