@@ -12,6 +12,8 @@ module.exports = [
     'gitadopt.com',
 
     // Promos
+    // TODO Please send a PR with ur website if it's not illegal or sth I'll merge
+    //      - dvtate
     'birdmonitors.net',
     'ubuntu.com',
     'archlinux.org',
@@ -21,6 +23,7 @@ module.exports = [
     'githubcopilotinvestigation.com',
     'tilde.club',
     'infoseccorp.com',
+    'miketestadesign.com',
 
     // Public good
     'wikipedia.org',
@@ -39,12 +42,14 @@ module.exports = [
     'lol.gg',
     'op.gg',
     'lolalytics.com',
+    'battle.net',
 
     // Shopping
     'ebay.com',
     'walmart.com',
     'amazon.com',
     'bestbuy.com',
+    'kroger.com',
 
     // Tech
     'apple.com',
@@ -73,6 +78,7 @@ module.exports = [
     't.me',
     'discord.com',
     'gmail.com',
+    'telegram.org',
 
     // news
     'cnn.com',
@@ -101,18 +107,40 @@ module.exports = [
     // Nerd
     'github.com',
     'stackoverflow.com',
+    'gitlab.com',
+    'npmjs.com',
+    'docker.com',
+    'expressjs.com',
+    'github.io',
+    'neocities.org',
+
+    // Langs
+    'python.org',
+    'php.net',
+    'deno.land',
+    'deno.com',
+    
+    // Blogs
+    'wordpress.com',
+    'wasm.builders',
 
     // Schools
     'iit.edu',
     'mit.edu',
     'uchicago.edu',
+    'pitt.edu',
 
+    // Govt
+    'healthcare.gov',
+    'www.gob.mx',
+    'gba.gob.ar',
+    
     // Other
     'wix.com',
     'zoom.earth',
     'robinhood.com',
     'x.com',
-    'wasm.builders',
     'feedburner.com',
     '3m.com',
+    'groupon.com',
 ];
