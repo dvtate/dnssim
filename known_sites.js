@@ -6,7 +6,7 @@ module.exports = [
     'bodge.dev',
     'dvtate.github.io',
     'corki.js.org',
-    'ridder.xyz',
+    'researchinenglish.com',
     'xss.software',
     'gitadopt.org',
     'gitadopt.com',
